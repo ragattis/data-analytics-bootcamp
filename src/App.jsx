@@ -36,10 +36,8 @@ import {
 } from 'lucide-react';
 
 // --- Gemini API Configuration ---
-// NOTE FOR NETLIFY/LOCAL USE: 
-// When running locally or on Netlify, you can change the line below to:
-// const apiKey = import.meta.env.VITE_GEMINI_API_KEY || "";
-const apiKey = "";
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY || "";
+// const apiKey = "";
 
 // --- Helper: PCM to WAV Converter for TTS ---
 const pcmToWav = (base64PCM, sampleRate = 24000) => {
